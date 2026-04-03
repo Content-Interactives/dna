@@ -1,42 +1,37 @@
 # DNA
 
-An interactive 3D visualization of DNA structure using Three.js. This project allows users to explore a double helix DNA model with color-coded base pairs and interactive features.
+React + Vite + TypeScript app rendering a 3D DNA model with **@react-three/fiber** and **@react-three/drei** (Three.js). Pedagogical content: [Standards.md](Standards.md).
 
----
+**Live:** https://content-interactives.github.io/dna
 
-## 🔗 Live Interactive
+## Requirements
 
-Try it out here:  
-👉 [https://content-interactives.github.io/dna](https://content-interactives.github.io/dna)
+- Node.js 18+  
+- npm
 
----
+## Commands
 
-## 🌐 Where This Interactive Is Being Used
+| Command | Description |
+|---------|-------------|
+| `npm install` | Dependencies |
+| `npm run dev` | Vite dev server |
+| `npm run build` | Production `dist/` |
+| `npm run preview` | Preview `dist/` |
+| `npm run lint` | ESLint |
 
-This interactive is currently featured in the following locations:
+Add a `deploy` script (for example gh-pages) if you need automated publishing; it is not defined in `package.json` today.
 
-- <img width="20" height="20" alt="image" src="https://github.com/user-attachments/assets/5d12571f-8e12-4441-98ab-c0bc94069a96" /> **CK-12 Intent Response**  
-  - 👉 PRODUCTION: PENDING  
-  - 👉 MASTER: PENDING  
-- 📘 **CK-12 Flexbooks**
-  - 👉 PENDING
+## Vite
 
----
+`vite.config.ts` sets `base: '/dna/'` for GitHub Pages.
 
-## 📚 Standards & Subjects
+## Layout
 
-This interactive aligns with the following topics and standards:
+- `src/App.tsx` — main scene / UI  
+- `src/main.tsx` — React bootstrap  
+- `index.html` — Vite entry  
+- `dist/` — build output
 
-- **📂 Subject Area**: High School Biology  
-- **🧮 Topic**: DNA Structure & Function  
-- **📏 NGSS Alignment**:  
-  - HS-LS1-1 – Construct an explanation based on evidence for how the structure of DNA determines the structure of proteins, which carry out the essential functions of life  
-  - HS-LS3-1 – Ask questions to clarify relationships about the role of DNA in coding the instructions for characteristic traits
+## Stack
 
----
-
-## 🛠️ Developer Notes
-
-- Built with: HTML, CSS, JavaScript, Three.js  
-- Deployed via GitHub Pages  
-- See `index.html` and supporting assets in `js/` and `css/` folders
+React 19, TypeScript, Vite 5/6, Three.js, React Three Fiber, Drei.
